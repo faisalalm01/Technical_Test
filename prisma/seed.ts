@@ -16,26 +16,40 @@ async function main() {
     await prisma.location.createMany({
         data: [
             {
-                name: "Central Park",
-                latitude: 40.785091,
-                longitude: -73.968285,
-                address: "New York, NY, USA",
-                description: "A famous park in New York City.",
+                name: "Monas (Monumen Nasional)",
+                latitude: -6.175392,
+                longitude: 106.827153,
+                address: "Gambir, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta",
+                description: "Ikon terkenal Indonesia yang terletak di Jakarta, simbol perjuangan bangsa."
             },
             {
-                name: "Location 2",
-                latitude: -6.917464,
-                longitude: 107.619125,
-                address: "lontrong 12",
-                description: "My Home",
+                name: "Candi Borobudur",
+                latitude: -7.607874,
+                longitude: 110.203751,
+                address: "Magelang, Jawa Tengah",
+                description: "Candi Buddha terbesar di dunia dan salah satu warisan budaya dunia UNESCO."
             },
             {
-                name: "Location 3",
-                latitude: -7.250445,
-                longitude: 112.768845,
-                address: "Jl. in aja dulu",
-                description: "My Office",
+                name: "Pantai Kuta",
+                latitude: -8.717719,
+                longitude: 115.168232,
+                address: "Kuta, Kabupaten Badung, Bali",
+                description: "Pantai populer dengan pasir putih yang menjadi daya tarik utama wisatawan di Bali."
             },
+            {
+                name: "Gunung Bromo",
+                latitude: -7.942493,
+                longitude: 112.953013,
+                address: "Probolinggo, Jawa Timur",
+                description: "Gunung berapi aktif yang menawarkan pemandangan matahari terbit yang menakjubkan."
+            },
+            {
+                name: "Danau Toba",
+                latitude: 2.693736,
+                longitude: 98.940389,
+                address: "Sumatera Utara",
+                description: "Danau vulkanik terbesar di Asia Tenggara dengan Pulau Samosir di tengahnya."
+            }
         ],
     });
 

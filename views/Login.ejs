@@ -24,7 +24,7 @@
             border: 1px solid #ccc;
         }
         button {
-            background-color: #28a745; /* Green */
+            background-color: #28a745;
             color: white;
             border: none;
             padding: 10px;
@@ -32,7 +32,7 @@
             cursor: pointer;
         }
         button:hover {
-            background-color: #218838; /* Darker green */
+            background-color: #218838;
         }
         .error {
             color: red;
@@ -72,7 +72,7 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
 
     if (response.ok) {
         alert("Login successful!");
-        window.location.href = '/'; // Redirect to home after successful login
+        window.location.href = '/';
     } else {
         const errorData = await response.json();
         alert("Login failed: " + errorData.message);

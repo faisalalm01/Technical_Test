@@ -50,11 +50,11 @@ export const addLocation = async (req: Request, res: Response): Promise<any> => 
             address,
             description,
         });
-        // res.redirect('/');
-        res.send({
-            msg: 'success create location',
-            data: {name, address, description}
-        })
+        res.redirect('/');
+        // res.send({
+        //     msg: 'success create location',
+        //     data: {name, address, description}
+        // })
     } catch (err) {
         res.status(500).send('Failed to create location');
     }
